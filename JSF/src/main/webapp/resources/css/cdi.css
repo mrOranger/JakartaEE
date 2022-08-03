@@ -1,0 +1,45 @@
+#title, #description {
+    text-align: center;
+    font-family: monospace;
+}
+
+#title {
+    color: red;
+    font-size: 30px;
+}
+
+#description {
+    color: blue;
+    font-size: 20px;
+}
+
+div {
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    border: 2px;
+    border-color: black;
+    bottom: 10px;
+}
+
+#session_group {
+    background-color: appworkspace;
+}
+
+#request_group {
+    background-color: beige;
+}
+
+#view_group {
+    background-color: khaki;
+}
+
+#application_group {
+    background-color: whitesmoke;
+}
+
+.employee {
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace, sans-serif;
+}
