@@ -8,6 +8,7 @@
             30
         </session-timeout>
     </session-config>
+    <display-name>JSF</display-name>
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
@@ -18,6 +19,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>*.html</url-pattern>
+        <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 </web-app>

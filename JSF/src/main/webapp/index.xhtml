@@ -10,13 +10,23 @@ and open the template in the editor.
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
-    <head>
-        <title>TODO supply a title</title>
+    <h:head>
+        <title>JSF start</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-    <body>
-        <h:outputText value = ""/>
-        <h:outputText value = ""/>
-        Hello World from Jakarta EE!
-    </body>
+        <h:outputStylesheet library = "css" name = "index.css" />
+    </h:head>
+    <h:body>
+        <h:form id = "form">
+            <h:outputText value = "#{bundle.insertName}" />
+            <h:inputText id = "name" value = "#{credential.name}"/>
+            <p/>
+            <h:outputText value = "#{bundle.insertSurname}" />
+            <h:inputText id = "surname" value = "#{credential.surname}"/>
+            <p/>
+            <h:outputText value = "#{bundle.insertAge}" />
+            <h:inputText id = "age" value = "#{credential.age}"/>  
+            <p/>
+            <h:commandButton id = "submit" value = "#{bundle.buttonLabel}" action = "#{credential.submit()}"/>
+        </h:form>
+    </h:body>
 </html>
