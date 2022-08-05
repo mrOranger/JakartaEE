@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+   <h:head>
+        <title>Selectables</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library = "css" name = "selectables.css" />
+    </h:head>
+    <h:body>
+        <div class = "selectable" id = "selectBooleanCheckbox">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectBooleanCheckbox_title}"/> <p/>
+            <h:outputText class = "subtitle" value = "#{bundle.selectables_selectBooleanCheckbox_subtitle}"/> <p/>
+            <h:selectBooleanCheckbox value = "#{selectable.simpleCheckbox}" />
+        </div>
+        <div>
+            <h:outputText class = "title"/> <p/>
+            <h:outputText class = "subtitle" />            
+        </div>
+        <div>
+            <h:outputText class = "title"/> <p/>
+            <h:outputText class = "subtitle" />
+        </div>
+        <div>
+            <h:outputText class = "title"/> <p/>
+            <h:outputText class = "subtitle" />            
+        </div>
+        <div>
+            <h:outputText class = "title"/> <p/>
+            <h:outputText class = "subtitle" />
+        </div>
+        <div>
+            <h:outputText class = "title"/> <p/>
+            <h:outputText class = "subtitle" />            
+        </div>
+        <div>
+            <h:outputText class = "title"/> <p/>
+            <h:outputText class = "subtitle" />            
+        </div>        
+    </h:body>
+</html>
