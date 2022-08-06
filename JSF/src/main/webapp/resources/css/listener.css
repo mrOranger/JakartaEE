@@ -1,0 +1,19 @@
+html {
+    padding: 20px;
+}
+
+#title, #subtitle {
+    padding: 20px;
+}
+
+#title {
+    font-family: monospace, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+#subtitle {
+    font-family: monospace, sans-serif;
+    font-size: 15px;
+    color: green;
+}
