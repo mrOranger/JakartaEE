@@ -2,18 +2,43 @@ package com.jsf.selectables;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
-import javax.faces.bean.ViewScoped;
+import java.util.Map;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
-@Named("selectable") @ViewScoped
+@Named("selectable") @SessionScoped
 public class Selectables implements Serializable{
     
     private static final long serialVersionUID = 10L;
     private boolean simpleCheckbox;
+    private List<String> manyCheckboxes;
+    private Map<String, String> employeesMap;
     
     public Selectables(){
         this.simpleCheckbox = Math.random()*10 < 0.5;
+        this.manyCheckboxes = Arrays.asList("Value1", "Value2", "Value3");
+        this.employeesMap = new HashMap<>();
+    }
+
+    public Map<String, String> getEmployeesMap() {
+        for(String value : this.manyCheckboxes) {
+            this.employeesMap.put(value, new Employee().getEmployee());
+        }
+        return this.employeesMap;
+    }
+
+    public void setEmployeesMap(Map<String, String> employeesMap) {
+        this.employeesMap = employeesMap;
+    }
+
+    public List<String> getManyCheckboxes() {
+        return manyCheckboxes;
+    }
+
+    public void setManyCheckboxes(List<String> manyCheckboxes) {
+        this.manyCheckboxes = manyCheckboxes;
     }
 
     public boolean isSimpleCheckbox() {

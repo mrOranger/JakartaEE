@@ -16,29 +16,47 @@
             <h:outputText class = "subtitle" value = "#{bundle.selectables_selectBooleanCheckbox_subtitle}"/> <p/>
             <h:selectBooleanCheckbox value = "#{selectable.simpleCheckbox}" />
         </div>
-        <div>
-            <h:outputText class = "title"/> <p/>
-            <h:outputText class = "subtitle" />            
+        <div class = "selectable" id = "selectBooleanManyCheckbox">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectManyCheckboxes_title}"/> <p/>
+            <h:outputText class = "subtitle" value = "#{bundle.selectables_selectManyCheckboxes_subtitle}"/> <p/>  
+            <h:selectManyCheckbox value = "#{selectable.manyCheckboxes}">
+                <f:selectItems value = "#{selectable.employeesMap}"/>
+            </h:selectManyCheckbox>
         </div>
-        <div>
-            <h:outputText class = "title"/> <p/>
-            <h:outputText class = "subtitle" />
+        <div class = "selectable" id = "selectManyListbox">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectManyListbox_title}" /> <p/>
+            <h:outputText class = "subtitle" value = "#{bundle.selectables_selectManyListbox_title}" /> <p/>
+            <h:selectManyListbox value = "#{selectable.manyCheckboxes}" >
+                <f:selectItems value = "#{selectable.employeesMap}" />
+            </h:selectManyListbox>
         </div>
-        <div>
-            <h:outputText class = "title"/> <p/>
-            <h:outputText class = "subtitle" />            
+        <div class = "selectable" id = "selectOneListbox">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectOneListbox_title}"/> <p/>
+            <h:outputText class = "subtitle" value = "#{bundle.selectables_selectOneListbox_subtitle}"/> <p/>
+            <h:selectOneListbox value = "#{selectable.manyCheckboxes}">
+                <f:selectItems value = "#{selectable.employeesMap}" />
+            </h:selectOneListbox>
         </div>
-        <div>
-            <h:outputText class = "title"/> <p/>
-            <h:outputText class = "subtitle" />
+        <div class = "selectable" id = "seletManyMenu">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectManyMenu_title}"/> <p/>
+            <h:outputText class = "subtitle"  value = "#{bundle.selectables_selectManyMenu_subtitle}"/> <p/>
+            <h:selectManyMenu value = "#{selectable.manyCheckboxes}">
+                <f:selectItems value = "#{selectable.employeesMap}"/>
+            </h:selectManyMenu>
         </div>
-        <div>
-            <h:outputText class = "title"/> <p/>
-            <h:outputText class = "subtitle" />            
+        <div class = "selectable" id = "selectOneMenu">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectOneMenu_title}"/> <p/>
+            <h:outputText class = "subtitle" value = "#{bundle.selectables_selectOneMenu_subtitle}"/> <p/>
+            <h:selectOneMenu value = "#{selectable.manyCheckboxes}">
+                <f:selectItems value = "#{selectable.employeesMap}"/>
+            </h:selectOneMenu>
         </div>
-        <div>
-            <h:outputText class = "title"/> <p/>
-            <h:outputText class = "subtitle" />            
+        <div class = "selectable" id = "selectOneRadio">
+            <h:outputText class = "title" value = "#{bundle.selectables_selectOneRadio_title}"/> <p/>
+            <h:outputText class = "subtitle" value = "#{bundle.selectables_selectOneRadio_subtitle}"/> <p/>
+            <h:selectOneRadio value = "#{selectable.manyCheckboxes}">
+                <f:selectItems value = "#{selectable.employeesMap}"/>
+            </h:selectOneRadio>
         </div>        
     </h:body>
 </html>
