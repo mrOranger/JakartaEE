@@ -1,0 +1,13 @@
+* {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.title{
+    font-size: 20px;
+    color: red;
+}
+
+.subtitle {
+    color: green;
+}
